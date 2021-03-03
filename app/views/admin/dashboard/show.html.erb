@@ -1,2 +1,20 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h2>Dashboard</h2>
+<br>
+
+<table class="table table-striped">
+  <tr>
+    <th>Metric</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Product Count</td>
+    <td><%= @product_count %></td>
+  </tr>
+  <tr>
+    <td>Category Count</td>
+    <td><%= @category_count %></td>
+  </tr>
+</table>
+
+<%= link_to 'View Products and Categories', '/admin/products' %>
+
