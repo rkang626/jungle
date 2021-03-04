@@ -7,14 +7,11 @@
     <th>Value</th>
   </tr>
   <tr>
-    <td>Product Count</td>
+    <td><%= link_to 'Product Count', [:admin, :products] %></td>
     <td><%= @product_count %></td>
   </tr>
   <tr>
-    <td>Category Count</td>
+    <td><%= link_to 'Category Count', [:admin, :categories] %></td>
     <td><%= @category_count %></td>
   </tr>
 </table>
-
-<%= link_to 'View Products and Categories', '/admin/products' %>
-
